@@ -5,7 +5,7 @@ const Footer = () => {
         <footer style={{backgroundColor:'#232331'}}>
             <div className="container py-5">
                 <div className="row">
-                    <div className="col-md-3 text-white">
+                    <div className="col-md-3 col-lg-3 col-xl-3 col-sm-12 col-xs-12 col-12 text-white">
                         <h4 className="pb-4"><u>ABOUT US</u></h4>
                         <p>Mohammadpur-1207</p>
                         <p>Dhaka, Bangladesh</p>
@@ -13,7 +13,7 @@ const Footer = () => {
                         <p>Assistant: +8801793810095</p>
                         <p>Email: miltonbiswas839@gmail.com</p>
                     </div>
-                    <div className="col-md-3 text-white">
+                    <div className="col-md-3 col-lg-3 col-xl-3 col-sm-12 col-xs-12 col-12 text-white">
                         <h4 className="pb-4"><u>OUR SERVICE</u></h4>
                         <ul>
                             <li>Engine Diagnostics</li>
@@ -26,7 +26,7 @@ const Footer = () => {
                             <li>Brake Repair</li>
                         </ul>
                     </div>
-                    <div className="col-md-3 text-white">
+                    <div className="col-md-3 col-lg-3 col-xl-3 col-sm-12 col-xs-12 col-12 text-white">
                         <h4 className="pb-4"><u>POPULAR TAGS</u></h4>
                         <a style={{border:'1px solid gray',padding:'6px 13px',marginRight:'5px',marginBottom:'20px'}}>BELTS</a>
                         <a style={{border:'1px solid gray',padding:'6px 13px',marginRight:'5px',marginBottom:'20px'}}>BRAKES</a>
@@ -45,7 +45,7 @@ const Footer = () => {
                         <a style={{border:'1px solid gray',padding:'6px 13px',marginRight:'5px'}}>TIRES</a>
                         <a style={{border:'1px solid gray',padding:'6px 13px',marginRight:'5px'}}>GLASS</a>
                     </div>
-                    <div className="col-md-3 text-white">
+                    <div className="col-md-3 col-lg-3 col-xl-3 col-sm-12 col-xs-12 col-12 text-white">
                         <h4 className="pb-4"><u>HOURS</u></h4>
                         <ul>
                             <li>Satuarday: 7.30am - 5.30pm</li>

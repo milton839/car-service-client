@@ -1,5 +1,5 @@
 #contact{
-	background-color: #ddd;
+	background-color: ##fcf9f9;
 }
 .contact-content h5 span {
 	color: #8cc090;
@@ -21,7 +21,7 @@
 .contact-form textarea {
 	width: 100%;
 	border: none;
-	background: #fff;
+	background: #ddd;
 	padding: 20px 30px;
 	margin-bottom: 30px;
 	text-transform: capitalize;

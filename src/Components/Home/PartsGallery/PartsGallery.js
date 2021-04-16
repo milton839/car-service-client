@@ -32,9 +32,10 @@ const galleryData = [
 
 const PartsGallery = () => {
     return (
-        <section className="parts mt-5 pt-5">
+        <section className="parts pt-5">
             <div className="parts-content">
             <h2 className="text-center" style={{ color:'#2D2741' }}>PARTS GALLERY</h2>
+            <p className="text-secondary text-center title-description">Our professionals will perform diagnostic tests, fluid flush and fills, engine replacement, oil changes, and total vehicle overhauls.</p>
             <div className="row me-5 pt-5">
                     {
                         galleryData.map(parts => <PartsGalleryView parts={parts}></PartsGalleryView>)

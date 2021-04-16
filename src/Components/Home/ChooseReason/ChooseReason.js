@@ -24,10 +24,10 @@ const chooseData = [
 
 const ChooseReason = () => {
     return (
-        <section  style={{backgroundColor:'lightGray'}} className="py-5">
+        <section  style={{backgroundColor:'#fcf9f9'}} className="py-5">
             <div className="container pt-5">
                 <h2 className="text-center pb-2" style={{ color:'#2D2741' }}>WHY <u>CHOOSE</u> US?</h2>
-                <p className="text-secondary text-center fs-4 pb-3">We are one of the leading auto repair shops serving customers in Tucson.All mechanic services are performed by highly qualified mechanics.</p>
+                <p className="text-secondary text-center title-description pb-3">We are one of the leading auto repair shops serving customers in Tucson.All mechanic services are performed by highly qualified mechanics.</p>
                 <div className="row">
                     {
                         chooseData.map(choose => <ChooseDetails choose={choose} key={choose.image}></ChooseDetails>)

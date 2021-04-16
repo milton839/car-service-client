@@ -6,7 +6,7 @@ import banner12 from '../../../images/banner-12.jpg';
 
 const Banner = () => {
     return (
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style={{marginTop:'-20px'}}>
                 <div class="carousel-inner">
                     <div class="carousel-item active banner-item">
                         <div className="banner-image">

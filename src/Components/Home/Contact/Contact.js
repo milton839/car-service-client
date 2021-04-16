@@ -8,7 +8,7 @@ const Contact = () => {
                 <div class="container">
                     <h2 className="text-center" style={{ color:'#2D2741' }}>INFORMATION</h2>
                     <div class="row align-items-center">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-md-6 col-xl-6 col-sm-12 col-xs-12 col-12">
                             <div class="section-title">
                                 <h2>Contact Information</h2>
                             </div>
@@ -24,7 +24,7 @@ const Contact = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-md-6 col-xl-6 col-sm-12 col-xs-12 col-12">
                             <div class="contact-form pt-5 mt-5">
                                 <form action="#">
                                     <input type="text" placeholder="your name *"/>
