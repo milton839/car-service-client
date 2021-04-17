@@ -12,6 +12,10 @@ import AddService from './Components/Admin/AddService/AddService';
 import OrderList from './Components/Admin/OrderList/OrderList';
 import MakeAdmin from './Components/Admin/MakeAdmin/MakeAdmin';
 import ManageService from './Components/Admin/ManageService/ManageService';
+import BookingList from './Components/Dashboard/BookingList/BookingList';
+import ServiceBook from './Components/Dashboard/ServiceBook/ServiceBook';
+import Review from './Components/Dashboard/Review/Review';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 
 export const UserContext = createContext();
 
@@ -36,6 +40,15 @@ function App() {
             </Route>
             <Route path="/manageService">
               <ManageService></ManageService>
+            </Route>
+            <PrivateRoute path="/bookingList">
+              <BookingList></BookingList>
+            </PrivateRoute>
+            <PrivateRoute path="/bookService/:bookId">
+              <ServiceBook></ServiceBook>
+            </PrivateRoute>
+            <Route path="/review">
+              <Review></Review>
             </Route>
             <Route exact path="/">
               <Home></Home>

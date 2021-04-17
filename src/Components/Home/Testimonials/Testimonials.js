@@ -1,32 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Testimonial from '../Testimonial/Testimonial';
 import './Testimonials.css';
-import wilson from '../../../images/wilson.png';
-import ema from '../../../images/ema.png';
-import aliza from '../../../images/aliza.png';
 
-const testimonialData = [
-    {
-        quote : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic non architecto nobis, adipisci recusandae repellat accusantium consequuntur, qui nisi deserunt blanditiis',
-        name : 'Wilson Harry',
-        from : 'California',
-        img : wilson
-    },
-    {
-        quote : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic non architecto nobis, adipisci recusandae repellat accusantium consequuntur, qui nisi deserunt blanditiis',
-        name : 'Ema Gomez',
-        from : 'California',
-        img : ema
-    },
-    {
-        quote : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic non architecto nobis, adipisci recusandae repellat accusantium consequuntur, qui nisi deserunt blanditiis',
-        name : 'Aliza Farari',
-        from : 'California',
-        img : aliza
-    }
-]
+
 
 const Testimonials = () => {
+    const [testimonials, setTestimonials] = useState([]);
+
+    useEffect(() => {
+        fetch('http://localhost:5000/reviews',)
+        .then(response => response.json())
+        .then(data => setTestimonials(data))
+    },[]);
     return (
        <section className="testimonials my-5 pt-5">
            <div className="container">
@@ -36,7 +21,7 @@ const Testimonials = () => {
                </div>
                <div className="card-deck mt-5 row">
                     {
-                        testimonialData.map(testimonial => <Testimonial testimonial={testimonial} key={testimonial.name}/>)
+                        testimonials.map(testimonial => <Testimonial testimonial={testimonial} key={testimonial._id}/>)
                     }
                 </div>
            </div>

@@ -11,8 +11,6 @@ const AddService = () => {
         newInfo[event.target.name] = event.target.value;
         setInfo(newInfo);
     }
-console.log("title",info.title);
-console.log("description",info.description);
     const handleFileChange = (event) => {
         console.log(event.target.files[0])
         const imageData = new FormData();
@@ -32,6 +30,7 @@ console.log("description",info.description);
     const handleSubmit = () => {
         const eventData ={
             title: info.title,
+            price: info.price,
             description:info.description,
             image_url: imageUrl
         }
@@ -63,6 +62,10 @@ console.log("description",info.description);
                         <div className="form-group">
                             <label htmlFor="title">Service Title</label>
                             <input onBlur={handleBlur} type="text" className="form-control" name="title" placeholder="Service Title" />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="title">Service Price</label>
+                            <input onBlur={handleBlur} type="number" className="form-control" name="price" placeholder="Service Price" />
                         </div>
                         <div className="form-group">
                             <label htmlFor="exampleInputPassword1">Service Description</label>

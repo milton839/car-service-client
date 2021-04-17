@@ -11,12 +11,12 @@ const chooseData = [
         description:'If you want the quality you would expect from the dealership, but with a more personal and friendly atmosphere, you have found it.',
     },
     {
-        image:chooseIcon1,
+        image:chooseIcon2,
         title:'BEST MATERIALS',
         description:'We have invested in all the latest specialist tools and diagnostic software that is specifically tailored for the software in your vehicle.',
     },
     {
-        image:chooseIcon1,
+        image:chooseIcon3,
         title:'PROFESSIONAL STANDARD',
         description:'Our auto repair shop is capable of servicing a variety of models. We only do the work that is needed to fix your problem.',
     }
