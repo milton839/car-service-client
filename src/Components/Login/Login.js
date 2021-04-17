@@ -133,7 +133,7 @@ const Login = () => {
 
     return (
         <section>
-            <div className="" style={{backgroundColor:'#1E1E1E'}}>
+            <div className="" style={{backgroundColor:'#4087FC'}}>
                 <Navbar></Navbar>
             </div>
             <div className="container">

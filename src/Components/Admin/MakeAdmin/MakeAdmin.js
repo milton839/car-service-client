@@ -1,8 +1,36 @@
 import React from 'react';
+import { useState } from 'react';
 import AdminHeader from '../AdminHeader/AdminHeader';
 import Sidebar from '../Sidebar/Sidebar';
 
 const MakeAdmin = () => {
+    const [info, setInfo] = useState([]);
+    const handleBlur = (event) =>{
+        const newInfo = { ...info };
+        newInfo[event.target.name] = event.target.value;
+        setInfo(newInfo);
+    }
+    console.log(info);
+    const handleSubmit = () => {
+        const eventData ={
+            name: info.name,
+            email: info.email,
+        }
+
+        const url = `http://localhost:5000/addAdmin`;
+        fetch(url,{
+            method:'POST',
+            headers:{
+                'Content-Type' : 'application/json'
+            },
+            body:JSON.stringify(eventData)
+        })
+        .then(res => {
+            if(res){
+                alert('Your Service added successfully');
+            }
+        });
+    }
     return (
         <section className="">
             <AdminHeader></AdminHeader>
@@ -12,11 +40,12 @@ const MakeAdmin = () => {
                 </div>
                 <div className="col-md-8 me-5 p-5 mt-5" style={{ position: "absolute",right:'0', backgroundColor: "#F4FDFB" }}>
                     <h5 className="text-brand">Make Admin</h5>
-                    <form >
-                    {/* onSubmit={handleSubmit} */}
+                    <form onSubmit={handleSubmit}>
                         <div className="form-group">
-                            <label htmlFor="exampleInputEmail1">Email address</label>
-                            <input type="email" className="form-control" name="email" placeholder="Enter email" />
+                            <input onBlur={handleBlur} type="text" className="form-control" name="name" placeholder="Enter Name" required/>
+                        </div>
+                        <div className="form-group">
+                            <input onBlur={handleBlur} type="email" className="form-control" name="email" placeholder="Enter Email" required/>
                         </div>
                         <button type="submit" className="btn btn-primary">Submit</button>
                     </form>

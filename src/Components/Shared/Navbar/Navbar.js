@@ -16,16 +16,16 @@ const Navbar = () => {
                                 <Link class="nav-link me-5 text-white active" aria-current="page" to="/home">Home</Link>
                             </li>
                             <li class="nav-item">
-                                <Link class="nav-link me-5 text-white" to="/about">About</Link>
-                            </li>
-                            <li class="nav-item">
-                                <Link class="nav-link me-5 text-white" to="/">Link</Link>
+                                <Link class="nav-link me-5 text-white" to="/">About</Link>
                             </li>
                             <li class="nav-item">
                                 <Link class="nav-link me-5 text-white" to="/bookingList">Dashboard</Link>
                             </li>
                             <li class="nav-item">
-                                <Link class="nav-link me-5 text-white" to="/addService">Admin</Link>
+                                <Link class="nav-link me-5 text-white" to="/admin">Admin</Link>
+                            </li>
+                            <li class="nav-item">
+                                <Link class="nav-link me-5 text-white" to="/">Contact Us</Link>
                             </li>
                         </ul>
                         <button style={{ backgroundColor:'tomato',padding:'5px 15px',border:'0',marginLeft:'30px',borderRadius:'5px' }} className="fs-5 fw-bold"><Link style={{ textDecoration:'none',color:'white' }} to="/login">Log In</Link></button>

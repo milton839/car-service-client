@@ -6,9 +6,9 @@ import { FaPlus,FaBorderAll,FaUser,FaClipboardList } from 'react-icons/fa';
 const DashboardSidebar = () => {
     return (
         <div className="sidebar d-flex flex-column justify-content-between col-md-6 py-5 px-4" style={{ height: "100vh" }}>
-            <ul className="">
+            <ul className="list-unstyled">
                     <li>
-                        <Link to="/bookService" className="text-white">
+                        <Link to="/" className="text-white">
                         <FaPlus /> <span>Book Service</span>
                         </Link>
                     </li>

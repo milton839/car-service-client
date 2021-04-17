@@ -16,6 +16,8 @@ import BookingList from './Components/Dashboard/BookingList/BookingList';
 import ServiceBook from './Components/Dashboard/ServiceBook/ServiceBook';
 import Review from './Components/Dashboard/Review/Review';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import Sidebar from './Components/Admin/Sidebar/Sidebar';
+import Admin from './Components/Admin/Admin/Admin';
 
 export const UserContext = createContext();
 
@@ -23,7 +25,6 @@ function App() {
   const [loggedInUser, setLoggedInUser] = useState([]);
   return (
     <UserContext.Provider value={[loggedInUser,setLoggedInUser]}>
-      <p>{loggedInUser.name}</p>
         <Router>
           <Switch>
             <Route path="/home">
@@ -41,6 +42,9 @@ function App() {
             <Route path="/manageService">
               <ManageService></ManageService>
             </Route>
+            <PrivateRoute path="/admin">
+              <Admin></Admin>
+            </PrivateRoute>
             <PrivateRoute path="/bookingList">
               <BookingList></BookingList>
             </PrivateRoute>
