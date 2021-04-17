@@ -1,4 +1,5 @@
 import React from 'react';
+import moment from 'moment';
 
 const AllOrderDetails = ({order}) => {
     const {bookingData,paymentId,orderTime} = order;
@@ -9,7 +10,7 @@ const AllOrderDetails = ({order}) => {
             <td>{bookingData.title}</td>
             <td>{bookingData.price}</td>
             <td>{paymentId}</td>
-            <td>{orderTime}</td>
+            <td>{moment(order.orderTime).format('DD-MM-YYYY hh:mm:ss A')}</td>
         </tr>
     );
 };
