@@ -23,11 +23,11 @@ const Admin = () => {
         <section>
             <AdminHeader></AdminHeader>
             <div className="row">
-                <div className="col-md-5">
+                <div className="col-md-4">
                     <Sidebar></Sidebar>
                 </div>
                 {
-                    !isAdmin && <div className="col-md-8 me-5 p-5 mt-5" style={{ position: "absolute",right:'0', backgroundColor: "#F4FDFB" }}>
+                    !isAdmin && <div className="col-md-7 me-5 p-5 mt-5" style={{ position: "absolute",right:'0', backgroundColor: "#F4FDFB" }}>
                     
                      <h2>You are not authorizes this Admin Panel</h2>
                     

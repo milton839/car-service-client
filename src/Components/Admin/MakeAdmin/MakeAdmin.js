@@ -11,7 +11,7 @@ const MakeAdmin = () => {
         setInfo(newInfo);
     }
     console.log(info);
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
         const eventData ={
             name: info.name,
             email: info.email,
@@ -30,6 +30,7 @@ const MakeAdmin = () => {
                 alert('Your Service added successfully');
             }
         });
+        e.preventDefault();
     }
     return (
         <section className="">

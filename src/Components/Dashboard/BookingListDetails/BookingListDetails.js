@@ -12,7 +12,7 @@ const BookingListDetails = ({order}) => {
                             <h5 class="card-title">${order.bookingData.price}</h5>
                         </div>
                         <div className="col-md-6">
-                            <h5 class="card-title">Pending</h5>
+                            <h5 class="card-title">{order.status}</h5>
                         </div>
                     </div>
                     <h6>Order Time: {moment(order.orderTime).format('DD-MM-YYYY hh:mm:ss A')}</h6>

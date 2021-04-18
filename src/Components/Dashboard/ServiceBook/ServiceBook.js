@@ -11,6 +11,7 @@ const ServiceBook = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const [bookService, setBookService] = useState([]);
     const [bookingData, setBookingData] = useState(null);
+    const [status, setStatus] = useState('pending');
     const {bookId} = useParams();
     useEffect(() => {
         fetch('https://car-service-839.herokuapp.com/services')
@@ -35,7 +36,8 @@ const ServiceBook = () => {
 
     const handlePaymentSuccess = paymentId =>{
       const orderDetails = {
-        ...loggedInUser, 
+        ...loggedInUser,
+        status:status, 
         bookingData:bookingData,
         paymentId, 
         orderTime: new Date()
