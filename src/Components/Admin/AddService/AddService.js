@@ -27,7 +27,7 @@ const AddService = () => {
           });
     }
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
         const eventData ={
             title: info.title,
             price: info.price,
@@ -48,7 +48,9 @@ const AddService = () => {
                 alert('Your Service added successfully');
             }
         });
+        e.preventDefault();
     }
+    
     return (
         <section className="">
             <AdminHeader></AdminHeader>

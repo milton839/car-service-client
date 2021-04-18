@@ -30,7 +30,7 @@ console.log("description",info.description);
           });
     }
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
         const eventData ={
             name: info.name,
             company: info.company,
@@ -51,6 +51,7 @@ console.log("description",info.description);
                 alert('Your Service added successfully');
             }
         });
+        e.preventDefault();
     }
     return (
         <section className="">
