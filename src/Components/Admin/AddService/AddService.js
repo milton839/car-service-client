@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Sidebar from '../Sidebar/Sidebar';
-import AdminHeader from '../AdminHeader/AdminHeader';
+// import AdminHeader from '../AdminHeader/AdminHeader';
 import axios from 'axios';
 
 const AddService = () => {
@@ -53,9 +53,9 @@ const AddService = () => {
     
     return (
         <section className="">
-            <AdminHeader></AdminHeader>
+            {/* <AdminHeader></AdminHeader> */}
             <div className="row">
-                <div className="col-md-5">
+                <div className="col-md-4">
                     <Sidebar></Sidebar>
                 </div>
                 <div className="col-md-7 me-5 p-5 mt-5" style={{ position: "absolute",right:'0', backgroundColor: "#F4FDFB" }}>

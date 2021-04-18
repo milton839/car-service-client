@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import AdminHeader from '../AdminHeader/AdminHeader';
+// import AdminHeader from '../AdminHeader/AdminHeader';
 import AllOrderDetails from '../AllOrderDetails/AllOrderDetails';
 import Sidebar from '../Sidebar/Sidebar';
 
