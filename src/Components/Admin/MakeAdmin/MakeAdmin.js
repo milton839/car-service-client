@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-// import AdminHeader from '../AdminHeader/AdminHeader';
+import AdminHeader from '../AdminHeader/AdminHeader';
 import Sidebar from '../Sidebar/Sidebar';
 
 const MakeAdmin = () => {
@@ -33,7 +33,7 @@ const MakeAdmin = () => {
     }
     return (
         <section className="">
-            {/* <AdminHeader></AdminHeader> */}
+            <AdminHeader></AdminHeader>
             <div className="row">
                 <div className="col-md-4">
                     <Sidebar></Sidebar>

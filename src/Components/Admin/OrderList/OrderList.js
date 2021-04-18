@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
-// import AdminHeader from '../AdminHeader/AdminHeader';
+import AdminHeader from '../AdminHeader/AdminHeader';
 import AllOrderDetails from '../AllOrderDetails/AllOrderDetails';
 import Sidebar from '../Sidebar/Sidebar';
 
@@ -14,7 +14,7 @@ const OrderList = () => {
     }, []);
     return (
         <section className="">
-            {/* <AdminHeader></AdminHeader> */}
+            <AdminHeader></AdminHeader>
             <div className="row">
                 <div className="col-md-4">
                     <Sidebar></Sidebar>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-// import AdminHeader from '../AdminHeader/AdminHeader';
+import AdminHeader from '../AdminHeader/AdminHeader';
 import ManageServiceDetail from '../ManageServiceDetail/ManageServiceDetail';
 import Sidebar from '../Sidebar/Sidebar';
 
@@ -13,7 +13,7 @@ const ManageService = () => {
     },[]);
     return (
         <section className="">
-            {/* <AdminHeader></AdminHeader> */}
+            <AdminHeader></AdminHeader>
             <div className="row">
                 <div className="col-md-4">
                     <Sidebar></Sidebar>
