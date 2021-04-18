@@ -16,10 +16,10 @@ const OrderList = () => {
         <section className="">
             {/* <AdminHeader></AdminHeader> */}
             <div className="row">
-                <div className="col-md-5">
+                <div className="col-md-4">
                     <Sidebar></Sidebar>
                 </div>
-                <div className="col-md-8 me-5  mt-5 " style={{ position: "absolute",right:'0', backgroundColor: "#F4FDFB" }}>
+                <div className="col-md-7 me-5  mt-5 " style={{ position: "absolute",right:'0', backgroundColor: "#F4FDFB" }}>
                     <h5 className="text-brand pb-3">Orders List</h5>
                     <table class="table table-striped table-hover">
                         <thead>
