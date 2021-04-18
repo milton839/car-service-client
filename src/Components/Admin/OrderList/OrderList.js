@@ -14,7 +14,7 @@ const OrderList = () => {
     }, []);
     return (
         <section className="">
-            <AdminHeader></AdminHeader>
+            {/* <AdminHeader></AdminHeader> */}
             <div className="row">
                 <div className="col-md-5">
                     <Sidebar></Sidebar>
