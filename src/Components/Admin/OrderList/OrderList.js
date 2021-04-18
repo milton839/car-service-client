@@ -8,7 +8,7 @@ import Sidebar from '../Sidebar/Sidebar';
 const OrderList = () => {
     const [orders, setOrders] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/orders')
+        fetch('https://car-service-839.herokuapp.com/orders')
         .then(response => response.json())
         .then(data => setOrders(data))
     }, []);
@@ -38,6 +38,9 @@ const OrderList = () => {
                             }
                         </tbody>
                     </table>
+                    <div>
+                        <h2 className="text-center">Total Order: {orders.length}</h2>
+                    </div>
                 </div>
             </div>
         </section>

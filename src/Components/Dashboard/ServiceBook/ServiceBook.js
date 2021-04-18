@@ -13,7 +13,7 @@ const ServiceBook = () => {
     const [bookingData, setBookingData] = useState(null);
     const {bookId} = useParams();
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://car-service-839.herokuapp.com/services')
         .then(res => res.json())
         .then(data => setBookService(data))
     },[]);
@@ -41,7 +41,7 @@ const ServiceBook = () => {
         orderTime: new Date()
       };
 
-      fetch('http://localhost:5000/addOrder/',{
+      fetch('https://car-service-839.herokuapp.com/addOrder/',{
         method:'POST',
         headers:{
           'Content-Type':'application/json',

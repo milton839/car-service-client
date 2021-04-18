@@ -38,7 +38,7 @@ console.log("description",info.description);
             image_url: imageUrl
         }
 
-        const url = `http://localhost:5000/addReview`;
+        const url = `https://car-service-839.herokuapp.com/addReview`;
         fetch(url,{
             method:'POST',
             headers:{
