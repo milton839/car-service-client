@@ -25,5 +25,4 @@ In the project directory, you can run:
     12. Order product and see how many orders are available in your Account
     13. Add date time function(Use moment js)
 # My Website Link
-    [https://car-service-839.web.app/](https://car-service-839.web.app/)
     https://car-service-839.web.app/
